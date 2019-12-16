@@ -1,0 +1,369 @@
+<div class="top-header">
+  <!-- <div class="pr-2 pl-2 align-center" style="background: gray; border-radius: 20px; left:30px;font-size: 14px;">
+    <span class="align-center" style="color: white;margin-right: 5px;">
+      ثبت نام
+      <i class="far fa-user" style="font-size: 16px;margin-left: 5px;margin-right: 5px;"></i>
+    </span>
+
+
+  </div>
+  <div class="pr-2 pl-2 align-center ml-3" style="background: gray; border-radius: 20px; left:30px;font-size: 14px;">
+    <span class="align-center" style="color: white;margin-right: 5px;">
+      ورود
+      <i class="far fa-sign-in" style="font-size: 16px;margin-left: 5px;margin-right: 5px;"></i>
+    </span>
+  </div> -->
+</div>
+
+<div class="header" style="overflow: hidden">
+
+  <div id="account" class="arrow_box p-4" style="margin-right: 157px;">
+    <i class="fal fa-times-circle" style="margin-top: -10px;margin-left: -10px;"></i>
+    <div style="font-size: 13px;text-align: right;direction: rtl;">
+      <form class="form">
+        <div *ngIf="isLoginVisible" class="login fadeIn animated">
+          <div>
+            <a style="cursor: pointer;" (click)="login_click()">ثبت نام کنید</a>
+            <div style="border-bottom: 1px dashed #d3d3d3;" class=" mb-1 mt-2"></div>
+          </div>
+          <div>
+            <mat-form-field class="full-width">
+              <input class="w-100" matInput placeholder="نام کاربری" >
+              <!-- value="mohsen" -->
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field class="full-width">
+              <input matInput placeholder="کلمه عبور" type="password">
+              <!-- value="123456" -->
+            </mat-form-field>
+          </div>
+          <button class="mb-2 mt-2 w-100" mat-stroked-button>ورود</button>
+        </div>
+        <div *ngIf="!isLoginVisible" class="register fadeIn animated ">
+          <div>
+            <a style="cursor: pointer;" (click)="register_click()">ورود به حساب کاربری</a>
+            <div style="border-bottom: 1px dashed #d3d3d3;" class=" mb-1 mt-2"></div>
+          </div>
+          <div class="row">
+            <div class="pr-3 pl-3">
+              <div>
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="نام">
+                </mat-form-field>
+              </div>
+
+              <div>
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="پست الکترونیکی" type="text">
+                </mat-form-field>
+              </div>
+
+
+              <div>
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="کلمه عبور" type="password">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="pr-3 pl-3">
+              <div>
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="نام خانوادگی">
+                </mat-form-field>
+              </div>
+
+              <div>
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="موبایل" type="text">
+                </mat-form-field>
+              </div>
+
+
+              <div>
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="تکرار کلمه عبور" type="password">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+
+          <button class="mb-2 mt-2 w-100" mat-stroked-button>ثبت نام</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="basket" class="arrow_box p-3">
+    <i class="fal fa-times-circle" style="margin-top: -10px;margin-left: -10px;"></i>
+    <!-- <div style="font-size: 13px;text-align: right;direction: rtl;">سبد خرید خالی می باشد</div> -->
+    <div style="font-size: 13px;text-align: right;direction: rtl;padding: 8px;">
+      <table>
+        <tbody>
+          <tr class="bottom-line">
+            <td><img src="../../../../assets/Images/Img-Grp-4.png" class="img-basket"/></td>
+            <td><span>مس گین نوترند</span></td>
+            <td>
+              <i style="padding-right:20px;" class="pl-2 fal fa-plus-circle"></i>
+              <span>1 عدد</span>
+              <i class="pr-2 fal fa-minus-circle"></i>
+            </td>
+            <td>
+              <!-- <span class="discount">5% تخفیف</span> -->
+              <div style="padding-right: 20px;">
+                <img matTooltip="این محصول 3 مند پونت دارد" class="icon-inner-basket"
+                  src="../../../../assets/Images/Header/Crown_burned.png" />
+                <i matTooltip="این محصول 10% تخفیف دارد" class="far fa-percent icon-inner-basket text-center"></i>
+                <i matTooltip="هدیه این محصول یک تیشرت است" class="far fa-gift icon-inner-basket text-center"></i>
+              </div>
+
+            </td>
+            <td class="text-left"><span style="padding-right:20px;">250,000 تومان</span></td>
+            <td><i class="fal fa-trash-alt" style="padding-right:20px;font-size: 16px;"></i></td>
+          </tr>
+          <tr class="bottom-line">
+            <td><img src="../../../../assets/Images/Img-Grp-3.png" class="img-basket"></td>
+            <td><span>مس گین نوترند</span></td>
+            <td>
+              <i style="padding-right:20px;" class="pl-2 fal fa-plus-circle"></i>
+              <span>1 عدد</span>
+              <i class="pr-2 fal fa-minus-circle"></i>
+            </td>
+            <td>
+              <div style="padding-right: 20px;">
+                <img matTooltip="این محصول 3 مند پونت دارد" class="icon-inner-basket"
+                  src="../../../../assets/Images/Header/Crown_burned.png" />
+                <i matTooltip="این محصول 10% تخفیف دارد" class="far fa-percent icon-inner-basket text-center"></i>
+                <i matTooltip="هدیه این محصول یک تیشرت است" class="far fa-gift icon-inner-basket text-center"></i>
+              </div>
+            </td>
+            <td class="text-left"><span style="padding-right:20px;">250,000 تومان</span></td>
+            <td><i class="fal fa-trash-alt" style="padding-right:20px;font-size: 16px;"></i></td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr style="height: 35px;" class="base-color-red">
+            <td colspan="100">
+              <div class="row">
+                <div class="col-6" style="text-align: right;">هزینه ارسال</div>
+                <div class="col-6" style="text-align: left;">رایگان</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="100">
+              <div class="row">
+                <div class="col-6" style="text-align: right;">سود شما از این خرید</div>
+                <div class="col-6" style="text-align: left;">10,000 تومان</div>
+              </div>
+            </td>
+          </tr>
+          <tr style="height: 35px;font-weight: bold;">
+            <td colspan="100">
+              <div class="row total-price">
+                <div class="col-6" style="text-align: right;">قابل پرداخت</div>
+                <div class="col-6" style="text-align: left;">490,000 تومان</div>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="w-100 align-center">
+          <div (click)="navigate('cart')" class="go-to-cart align-center">
+              لیست خرید
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row col-12 p-3 pr-5 align-center" style="height: 101px;">
+    <div class="col-4 text-right" style="padding-right: 80px !important;">
+      <div class="row">
+        <!-- 
+       <app-basket>
+       </app-basket> -->
+
+        <div style="margin-left: 10px;margin-top: 1px;"><a matBadge="2" matBadgeOverlap="false"
+            class="fal fa-shopping-cart" (click)="btnBasketBoxOpen()"
+            style="font-size: 23px;margin-left: 20px;margin-right: 20px;"></a>
+          <div style="font-size: 12px;text-align: center;">
+            سبد خرید
+          </div>
+        </div>
+
+
+        <div> <a class="fal fa-user" (click)="btnAccountBoxOpen()"
+            style="font-size: 24px;margin-left: 5px;margin-right: 5px;"></a>
+          <div style="font-size: 12px;text-align: center;">
+            ورود
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div style="position: relative;" class="arrow_box"></div> -->
+
+    </div>
+    <div class="input-group col-4 pr-2 pl-2" style="direction: ltr; ">
+      <div class="input-group-prepend" style="height: 38px;">
+        <a class="fal fa-search mirror align-center search-ico"></a>
+        <!-- <a class="align-center txt-search input-group-text fal fa-search mirror" id="inputGroup-sizing-default"
+          style="font-size: 20px;"></a> -->
+      </div>
+      <input type="text" placeholder="جستجو ..." class="form-control txt-search text-right" aria-label="Default"
+        aria-describedby="inputGroup-sizing-default" style="height: 38px;direction: rtl;">
+    </div>
+    <div class="text-center col-4" style="margin-bottom:0;text-align:left !important;">
+      <span class="logo-text">Darumand</span>
+      <!-- <img class="logo" src="../../../../assets/Images/Header/logo.png"> -->
+
+    </div>
+    <!-- <div class="input-group mb-3 col-5" style="direction: ltr">
+      <div class="input-group-prepend">
+        <a class="input-group-text icon_search mirror" id="inputGroup-sizing-default"></a>
+      </div>
+      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div> -->
+
+  </div>
+  <div class="middel"></div>
+  <div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+      <!-- Navbar -->
+      <a class="navbar-brand" href="#"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <ul class="navbar-nav w-100 align-center">
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#">مکمل ورزشی</a>
+            <div class="triangle-nav-item" style="margin-right: 48px;"></div>
+            <div class="sub-menu  w-100 row">
+              <div class="col-3">
+                <ul class="padding: 30px;padding-right: 50px;margin-top:45px;">
+                  <li class="category-title"> پروتئن</li>
+                  <li class="bottom-line" style="width: 200px;padding: 2px;"></li>
+                  <li class="sub-item"> وی</li>
+                  <li class="sub-item"> کازئین </li>
+                  <li class="sub-item">ایزوله</li>
+                  <li class="sub-item">گیاهی</li>
+                  <li class="sub-item">ترکیبی</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul class="padding: 30px;padding-right: 50px;margin-top:45px;">
+                  <li class="category-title">اسید آمینه</li>
+                  <li class="bottom-line" style="width: 200px;padding: 2px;"></li>
+                  <li class="sub-item"> بی سی ای ای</li>
+                  <li class="sub-item"> گلوتامین </li>
+                  <li class="sub-item">ال آرژنین</li>
+                  <li class="sub-item">بتا آلانین</li>
+                  <li class="sub-item">آمینو</li>
+                </ul>
+              </div>
+
+              <div class="col-3">
+                <ul class="padding: 30px;padding-right: 50px;margin-top:45px;">
+                  <li class="category-title">کربوهیدرات / افزایش وزن</li>
+                  <li class="bottom-line" style="width: 200px;padding: 2px;"></li>
+                  <li class="sub-item"> گینر</li>
+                  <li class="sub-item"> کربوهیدرات </li>
+                </ul>
+              </div>
+
+              <div class="col-3">
+                <ul class="padding: 30px;padding-right: 50px;margin-top:45px;">
+                  <li class="category-title">قبل از تمرین / حین تمرین</li>
+                  <li class="bottom-line" style="width: 200px;padding: 2px;"></li>
+                  <li class="sub-item">کراتین</li>
+                  <li class="sub-item"> انرژی زا / پمپ </li>
+                  <li class="sub-item">کافئین</li>
+                  <li class="sub-item">بتا آلانین</li>
+                  <li class="sub-item">ال آرژنین</li>
+                </ul>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#">بهداشتی و آرایشی</a>
+            <div class="triangle-nav-item" style="margin-right: 64px;"></div>
+            <div class="sub-menu  w-100 row">
+              <div class="col-3">
+                <ul class="padding: 30px;padding-right: 50px;margin-top:45px;">
+                  <li class="category-title"> پروتئن</li>
+                  <li class="bottom-line" style="width: 200px;padding: 2px;"></li>
+                  <li class="sub-item"> وی</li>
+                  <li class="sub-item"> کازئین </li>
+                  <li class="sub-item">ایزوله</li>
+                  <li class="sub-item">گیاهی</li>
+                  <li class="sub-item">ترکیبی</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul class="padding: 30px;padding-right: 50px;margin-top:45px;">
+                  <li class="category-title">اسید آمینه</li>
+                  <li class="bottom-line" style="width: 200px;padding: 2px;"></li>
+                  <li class="sub-item"> بی سی ای ای</li>
+                  <li class="sub-item"> گلوتامین </li>
+                  <li class="sub-item">ال آرژنین</li>
+                  <li class="sub-item">بتا آلانین</li>
+                  <li class="sub-item">آمینو</li>
+                </ul>
+              </div>
+
+              <div class="col-3">
+                <ul class="padding: 30px;padding-right: 50px;margin-top:45px;">
+                  <li class="category-title">کربوهیدرات / افزایش وزن</li>
+                  <li class="bottom-line" style="width: 200px;padding: 2px;"></li>
+                  <li class="sub-item"> گینر</li>
+                  <li class="sub-item"> کربوهیدرات </li>
+                </ul>
+              </div>
+
+              <div class="col-3">
+                <ul class="padding: 30px;padding-right: 50px;margin-top:45px;">
+                  <li class="category-title">قبل از تمرین / حین تمرین</li>
+                  <li class="bottom-line" style="width: 200px;padding: 2px;"></li>
+                  <li class="sub-item">کراتین</li>
+                  <li class="sub-item"> انرژی زا / پمپ </li>
+                  <li class="sub-item">کافئین</li>
+                  <li class="sub-item">بتا آلانین</li>
+                  <li class="sub-item">ال آرژنین</li>
+                </ul>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="nav-item text-center">
+
+            <a class="nav-link" href="#">برند ها</a>
+            <div class="triangle-nav-item" style="margin-right: 32px;"></div>
+            <div class="sub-menu"> </div>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">بلاگ</a>
+            <div class="triangle-nav-item" style="margin-right: 27px;"></div>
+            <div class="sub-menu"> </div>
+
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+  </div>
+
+</div>

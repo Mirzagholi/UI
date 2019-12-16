@@ -1,0 +1,279 @@
+@import '../../../../assets/scss/variables.scss';
+
+.middel-map-site-caption {
+    padding-left: 10px;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.map-site-caption {
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+
+
+.caption-tags {
+    color: $base-color-green;
+}
+
+.map-site-box {
+    direction: rtl;
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-img {
+    width: 100%;
+    padding: 4px;
+}
+
+.img-bottom-box {
+    display: flex;
+    flex-flow: row;
+}
+
+.img-item {
+    width: 100%;
+    padding: 4px;
+}
+
+.item {
+    width: 24.6%;
+}
+
+.des-text {
+    text-align: justify !important;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.first-des{
+font-size: 22px;
+font-weight: 600;
+color: $base-color-red;
+}
+
+.secound-des{
+font-weight: 500;
+}
+
+.box {
+    border: none !important;
+    // border-right: $border !important;
+    // border-left: $border !important;
+
+    box-shadow: $box-shadow;
+}
+
+.price {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: $base-color-red;
+}
+
+.discount-box {
+    width: 100%;
+    border: dotted 1px lightgray;
+    margin: auto;
+    border-radius: 3px;
+    background-color: #f7f8f9;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.icon-mandpoint {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    margin-top: 40px;
+    color: $base-color-red;
+}
+
+.txt-mandpoint {
+    margin-right: 2px;
+    font-size: 20px;
+    margin-top: 6px;
+    color: black !important;
+    color: $base-color-red;
+}
+
+.caption {
+    text-align: right;
+    font-size: 14px;
+    color: rgb(73, 73, 73);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
+    color: #353535 !important;
+    background-color: #eee !important;
+    border-color: #eee !important;
+}
+
+
+.btn-secondary {
+    color: #353535 !important;
+    background-color: #eee !important;
+    // border-color: #eee !important;
+    border-color: #d2d2d2 !important;
+    border: solid 1px;
+    border-bottom: 3px solid;
+}
+
+.dropdown-menu-right {
+    transform: translate3d(0px, 38px, 0px) !important;
+    width: 100% !important;
+}
+
+.dropdown-toggle::after {
+    height: 5px !important;
+    margin-right: 10px;
+}
+
+.btn-group>.btn:first-child {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+
+.dropdown-item {
+    text-align: right;
+}
+
+.btn-style {
+    font-size: 24px;
+    padding: 0px;
+    width: 41px;
+    height: 45px;
+    color: #a0a0a0 !important;
+    background-color: #eee !important;
+    border-color: #dedede !important;
+    border: solid 1px;
+    text-align: center;
+    border-bottom: 3px solid;
+}
+
+.btn-plus {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+}
+
+.caption-number {
+    height: 45px;
+    color: #353535 !important;
+    width: calc( 100% - 84px);
+    border-color: #dedede !important;
+    border: solid 1px;
+    text-align: center;
+    border-bottom: 3px solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.parent-card {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.add-to-card {
+    color: #fff;
+    background-color: $base-color-red;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 19px;
+    text-align: center;
+    height: 45px;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row;
+}
+
+.contents {
+    margin: auto;
+}
+
+.first-caption-comment{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.secound-caption-comment{
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 200;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    .contents {
+        width: 98%;
+    }
+
+    .right-box {
+        height: 525px;
+    }
+
+    .left-box {
+        height: 525px;
+    }
+
+    .top-box {
+        height: 250px;
+    }
+
+    .bottom-box {
+        height: 250px;
+    }
+}
+
+.inner-item {
+    padding: 15px;
+}
+
+.technical-box{
+    box-shadow: 0 2px 3px 0px rgba(69, 65, 78, 0.08) !important;
+    background-color: #fafafa;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0), 0 -6px 35px rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+@media (min-width: 1400px) {
+
+    .contents {
+        width: 75%;
+    }
+
+    .right-box {
+        height: 625px;
+    }
+
+    .left-box {
+        height: 625px;
+    }
+
+    .top-box {
+        height: 300px;
+    }
+
+    .bottom-box {
+        height: 300px;
+    }
+}

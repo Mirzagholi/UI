@@ -1,0 +1,66 @@
+@import '../../../../assets/scss/variables.scss';
+
+.img-basket {
+  width: 45px;
+  margin-left: 10px;
+}
+
+.fa-cart-plus:hover>.sub-menu {
+
+  border: $border;
+  box-shadow: $box-shadow;
+  // display: grid;
+  visibility: visible;
+
+  background: #fff;
+}
+
+.display {
+  display: grid !important;
+}
+
+.total-price {
+  font-size: 15px;
+  color: $base-color-red;
+}
+
+.arrow_box {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #c2e1f5;
+  z-index: 10;
+  margin-top: 80px;
+  width: auto;
+  margin-right: 97px;
+  height: auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  display: none;
+  min-width: 210px;
+  padding-bottom: 5px !important;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+  bottom: 100%;
+  left: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  margin-right: 21px;
+}
+
+.arrow_box:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #ffffff;
+  border-width: 9px;
+}
+
+.arrow_box:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #c2e1f5;
+  border-width: 10px;
+  margin-right: 20px;
+}

@@ -1,0 +1,70 @@
+
+<div style="margin-left: 10px;margin-top:1px"><a class="fal fa-shopping-cart" (click)="btnBasketBoxOpen()"
+    style="font-size: 23px;margin-left: 20px;margin-right: 20px;"></a>
+  <div style="font-size: 12px;text-align: center;">
+    سبد خرید
+  </div>
+</div>
+
+
+<div id="basket" class="arrow_box p-3">
+  <i class="fal fa-times-circle" style="margin-top: -10px;margin-left: -10px;"></i>
+  <!-- <div style="font-size: 13px;text-align: right;direction: rtl;">سبد خرید خالی می باشد</div> -->
+  <div style="font-size: 13px;text-align: right;direction: rtl;padding: 8px;">
+    <table>
+      <tbody>
+        <tr class="bottom-line">
+          <td><img src="../../../../assets/Images/Img-Grp-4.png" class="img-basket"></td>
+          <td><span>مس گین نوترند</span></td>
+          <td>
+            <i style="padding-right:20px;" class="pl-2 fal fa-plus-circle"></i>
+            <span>1 عدد</span>
+            <i class="pr-2 fal fa-minus-circle"></i>
+          </td>
+          <td><span class="discount">5% تخفیف</span></td>
+          <td class="text-left"><span style="padding-right:20px;">250,000 تومان</span></td>
+          <td><i class="fal fa-trash-alt" style="padding-right:20px;font-size: 16px;"></i></td>
+        </tr>
+        <tr class="bottom-line">
+          <td><img src="../../../../assets/Images/Img-Grp-3.png" class="img-basket"></td>
+          <td><span>مس گین نوترند</span></td>
+          <td>
+            <i style="padding-right:20px;" class="pl-2 fal fa-plus-circle"></i>
+            <span>1 عدد</span>
+            <i class="pr-2 fal fa-minus-circle"></i>
+          </td>
+          <td><span class="discount">5% تخفیف</span></td>
+          <td class="text-left"><span style="padding-right:20px;">250,000 تومان</span></td>
+          <td><i class="fal fa-trash-alt" style="padding-right:20px;font-size: 16px;"></i></td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr style="height: 35px;" class="base-color-red">
+          <td colspan="100">
+            <div class="row">
+              <div class="col-6" style="text-align: right;">هزینه ارسال</div>
+              <div class="col-6" style="text-align: left;">رایگان</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="100">
+            <div class="row">
+              <div class="col-6" style="text-align: right;">تخفیف</div>
+              <div class="col-6" style="text-align: left;">10,000 تومان</div>
+            </div>
+          </td>
+        </tr>
+        <tr style="height: 35px;font-weight: bold;">
+          <td colspan="100">
+            <div class="row total-price">
+              <div class="col-6" style="text-align: right;">قابل پرداخت</div>
+              <div class="col-6" style="text-align: left;">490,000 تومان</div>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

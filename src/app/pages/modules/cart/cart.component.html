@@ -1,0 +1,432 @@
+<div class="map-site-box row">
+        <div class="map-site-caption" (click)="navigate('')">صفحه اصلی</div>
+        <div class="fal fa-chevron-left middel-map-site-caption"></div>
+        <div class="map-site-caption">سبد خرید</div>
+   
+    </div>
+    <div class="pr-3 pl-3">
+        <div class="w-100" style="border-bottom: 1px solid #eeeeee;"> </div>
+    </div>
+
+<div class="contents p-3">
+    <mat-tab-group [selectedIndex]="selectedTab" mat-align-tabs="right">
+
+        <mat-tab label="سبد خرید">
+
+            <div class="pt-2 m-0 row">
+
+                <div class="col-12 row m-auto content-box text-right   pt-3" style="margin-top: 0 !important;">
+
+                    <div class="box w-100 header-prod align-center">
+
+                        <p class="header-prod-item align-center" style="width: 40%;">
+                            محصول
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            قیمت
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            تخفیف
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            تعداد
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            جمع قیمت
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 5%;border:none">
+                            حذف
+                        </p>
+                    </div>
+
+                    <div class="box w-100 ">
+
+                        <div class="w-100 mb-2 cart-prod align-center">
+
+                            <div class="cart-prod-item align-center pr-5" style="width: 40%;">
+                                <img src="../../../../assets/Images/Img-Grp-1.png" class="img-basket" />
+                                <span class="w-100 text-right pr-2">
+                                    مس گین نوترند
+                                </span>
+                            </div>
+
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                تومان 500,000
+                            </p>
+
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                5 درصد
+                            </p>
+
+                            <p class="cart-prod-item align-center p-1" style="width: 10%;">
+                                <input type="number" value="1" style="width: 80px;height: 25px;;padding-right: 5px;">
+                            </p>
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                تومان 500,000
+                            </p>
+                            <p class="cart-prod-item align-center " style="width: 5%;border:none">
+                                <i class="fal fa-trash-alt" style="font-size: 16px;"></i>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="box w-100 ">
+
+                        <div class="w-100 mb-2 cart-prod align-center">
+
+                            <div class="cart-prod-item align-center pr-5" style="width: 40%;">
+                                <img src="../../../../assets/Images/Img-Grp-3.png" class="img-basket" />
+                                <span class="w-100 text-right pr-2">
+                                    مس گین نوترند
+                                </span>
+                            </div>
+
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                تومان 500,000
+                            </p>
+
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                5 درصد
+                            </p>
+
+                            <p class="cart-prod-item align-center p-1" style="width: 10%;">
+                                <input type="number" value="1" style="width: 80px;height: 25px;;padding-right: 5px;">
+                            </p>
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                تومان 500,000
+                            </p>
+                            <p class="cart-prod-item align-center " style="width: 5%;border:none">
+                                <i class="fal fa-trash-alt" style="font-size: 16px;"></i>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="box w-100 ">
+
+                        <div class="w-100 mb-2 cart-prod align-center">
+
+                            <div class="cart-prod-item align-center pr-5" style="width: 40%;">
+                                <img src="../../../../assets/Images/Img-Grp-1.png" class="img-basket" />
+                                <span class="w-100 text-right pr-2">
+                                    مس گین نوترند
+                                </span>
+                            </div>
+
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                تومان 500,000
+                            </p>
+
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                5 درصد
+                            </p>
+
+                            <p class="cart-prod-item align-center p-1" style="width: 10%;">
+                                <input type="number" value="1" style="width: 80px;height: 25px;padding-right: 5px;">
+                            </p>
+                            <p class="cart-prod-item align-center" style="width: 15%;">
+                                تومان 500,000
+                            </p>
+                            <p class="cart-prod-item align-center " style="width: 5%;border:none">
+                                <i class="fal fa-trash-alt" style="font-size: 16px;"></i>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div style="display: flex;flex-flow: row;" class="w-100">
+
+                        <div style="width: 50% ;">
+                            <div class="box w-100 header-prod align-center">
+
+                                <p class="header-prod-item align-center" style="width: 40%;">
+                                    جمع قیمت :
+                                </p>
+
+                                <p class="header-prod-item align-center" style="width: 60%;">
+                                    1500,000 تومان
+                                </p>
+
+                            </div>
+                            <div class="box w-100 header-prod align-center">
+
+                                <p class="header-prod-item align-center" style="width: 40%;">
+                                    هزینه ارسال :
+                                </p>
+
+                                <p class="header-prod-item align-center" style="width: 60%;">
+                                    0 تومان
+                                </p>
+
+                            </div>
+                            <div class="box w-100 header-prod align-center">
+
+                                <p class="header-prod-item align-center" style="width: 40%;">
+                                    امتیاز کسب شده در این خرید :
+                                </p>
+
+                                <p class="header-prod-item align-center" style="width: 60%;">
+                                    10
+                                    <img matTooltip="این محصول 3 مند پونت دارد" class="icon-inner-basket"
+                                        src="../../../../assets/Images/Header/Crown_burned.png" />
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="box header-prod align-center"
+                            style="width:50%;height: 96.5%;margin-right: 2px;font-weight: 500;">
+
+                            <p class="header-prod-item align-center" style="width: 40%;font-size: 20px;">
+                                جمع کل :
+                            </p>
+
+                            <p class="header-prod-item align-center" style="width: 60%;font-size: 20px;">
+                                1500,000 تومان
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="box header-prod align-center"
+                        style="width:100%;height: 100%;margin-right: 2px;font-weight: 500;padding-bottom: 5px;">
+
+                        <p class="header-prod-item align-center" style="font-size: 20px;">
+                            <mat-radio-group aria-label="Select an option" style="font-size: 15px;">
+                                <mat-radio-button class="pr-3 pl-3" value="1">پرداخت در محل</mat-radio-button>
+                                <mat-radio-button value="2">پرداخت از طریق درگاه</mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+
+                        <div class="header-prod-item align-center" style="width: 60%;font-size: 20px;">
+                            <div class="align-center" style="width: 150px;margin-right: auto;">
+                                <div (click)="goToSelectAddress()" class="next-to-pay align-center">
+                                    ادامه خرید
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </mat-tab>
+
+        <mat-tab label="خرید های قبلی">
+
+            <div class="pt-2 m-0 row">
+
+                <div class="col-12 row m-auto content-box text-right   pt-3" style="margin-top: 0 !important;">
+
+                    <div class="box w-100 header-prod align-center">
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            نام
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            نام خانوادگی
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            شماره فاکتور
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            تاریخ فاکتور
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            مبلغ فاکتور
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            امتیاز فاکتور
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            وضعیت فاکتور
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            امتیاز فاکتور
+                        </p>
+                    </div>
+
+                    <div class="box w-100  align-center">
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            محسن
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            پناهی
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            515151510
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            1398/08/07
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            1500,000
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            5
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            ثبت سفارش
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            150
+                        </p>
+                    </div>
+
+
+                    <div class="box w-100  align-center ">
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            محسن
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            پناهی
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            515151510
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            1398/08/07
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            1500,000
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            5
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            ثبت سفارش
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            150
+                        </p>
+
+                    </div>
+
+                    <div class="box w-100  align-center">
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            محسن
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            پناهی
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            515151510
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            1398/08/07
+                        </p>
+
+                        <p class="header-prod-item align-center" style="width: 10%;">
+                            1500,000
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            5
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            ثبت سفارش
+                        </p>
+                        <p class="header-prod-item align-center" style="width: 15%;">
+                            150
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </mat-tab>
+
+        <mat-tab label="اطلاعات شخصی">
+
+            <div class="pt-2 m-0 row">
+
+                <div class="row m-auto col-12">
+                    <div class="pr-3 pl-3 col-4">
+                        <div>
+                            <mat-form-field class="full-width">
+                                <input matInput placeholder="نام">
+                            </mat-form-field>
+                        </div>
+
+                        <div>
+                            <mat-form-field class="full-width">
+                                <input matInput placeholder="پست الکترونیکی" type="text">
+                            </mat-form-field>
+                        </div>
+                        <div style="padding: 20px;text-align: right;padding-right: 40px;">
+                            <mat-radio-group class="full-width" aria-label="Select an option" style="font-size: 15px;">
+                                <mat-radio-button class="pr-3 pl-3" value="1">مرد</mat-radio-button>
+                                <mat-radio-button value="2">زن</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+
+
+
+                        <div>
+                            <mat-form-field class="full-width">
+                                <input matInput placeholder="تلفن" type="text">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="pr-3 pl-3 col-4">
+                        <div>
+                            <mat-form-field class="full-width">
+                                <input matInput placeholder="نام خانوادگی">
+                            </mat-form-field>
+                        </div>
+
+
+                        <div>
+                            <mat-form-field class="full-width">
+                                <input matInput placeholder="نام کاربری" type="text">
+                            </mat-form-field>
+                        </div>
+
+
+                        <div>
+                            <mat-form-field class="full-width">
+                                <input matInput placeholder="موبایل" type="text">
+                            </mat-form-field>
+                        </div>
+
+
+                        <div>
+                            <mat-form-field class="full-width">
+                                <input matInput placeholder="تاریخ تولد" type="text">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-8" style="width: 65%;">
+                    <mat-form-field class="address">
+                        <input matInput placeholder="آدرس" type="text">
+                    </mat-form-field>
+                </div>
+
+                <div class="header-prod-item align-center" style="width: 60%;font-size: 20px;">
+                        <div class="align-center" style="width: 150px;margin-right: auto;">
+                            <div (click)="showCartPage = false;" class="next-to-pay align-center">
+                                پرداخت
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            
+        </mat-tab>
+
+    </mat-tab-group>
+</div>

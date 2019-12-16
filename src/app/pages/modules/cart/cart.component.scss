@@ -1,0 +1,177 @@
+@import '../../../../assets/scss/variables.scss';
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    .contents {
+        width: 98%;
+    }
+
+    .right-box {
+        height: 525px;
+    }
+
+    .left-box {
+        height: 525px;
+    }
+
+    .top-box {
+        height: 250px;
+    }
+
+    .bottom-box {
+        height: 250px;
+    }
+}
+
+.inner-item {
+    padding: 15px;
+}
+
+.technical-box {
+    box-shadow: 0 2px 3px 0px rgba(69, 65, 78, 0.08) !important;
+    background-color: #fafafa;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0), 0 -6px 35px rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+@media (min-width: 1400px) {
+
+    .contents {
+        width: 75%;
+    }
+
+    .right-box {
+        height: 625px;
+    }
+
+    .left-box {
+        height: 625px;
+    }
+
+    .top-box {
+        height: 300px;
+    }
+
+    .bottom-box {
+        height: 300px;
+    }
+}
+
+
+.middel-map-site-caption {
+    padding-left: 10px;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.map-site-caption {
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+
+
+.caption-tags {
+    color: $base-color-green;
+}
+
+.map-site-box {
+    direction: rtl;
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-img {
+    width: 100%;
+    padding: 4px;
+}
+
+.img-bottom-box {
+    display: flex;
+    flex-flow: row;
+}
+
+.img-item {
+    width: 100%;
+    padding: 4px;
+}
+
+.box {
+    margin-top: 2px;
+    min-height: 30px;
+}
+
+.header-prod-item {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border-left: $border-light;
+}
+
+.header-prod {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 35px;
+    margin-bottom: 2px !important;
+    background: #f9f9f9;
+}
+
+
+.cart-prod-item {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border-left: $border-light;
+    text-align: center;
+}
+
+.cart-prod {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 80px;
+    margin-bottom: 2px !important;
+}
+
+.img-basket {
+    width: 60px;
+}
+
+.icon-inner-basket {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    margin-top: -8px;
+    font-size: 20px;
+    color: $base-color-red;
+}
+
+.next-to-pay {
+    color: #fff;
+    background-color: $base-color-red;
+    border-radius: 5px;
+    width: 90%;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+    height: 35px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .full-width{
+      width: 85% ;
+  }
+
+  .address{
+    width: 91%;
+    padding-left: 5px;
+  }

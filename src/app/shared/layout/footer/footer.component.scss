@@ -1,0 +1,248 @@
+@import '../../../../assets/scss/variables.scss';
+
+.footer-top {
+  height: 52px;
+  background-color: #717171;
+  margin-top: 10px;
+  box-shadow: 0 1px 15px 1px rgba(69, 65, 78, 0.08);
+  border-top: 2px solid #c3c3c3;
+  border-bottom: 2px solid #9a9a9a;
+  width: 100%;
+}
+
+.footer-middel {
+  overflow: hidden;
+}
+
+
+.sec-footer {
+  background: #433d7b;
+  direction: rtl;
+  text-align: right;
+  color: #fff;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.sec-footer .desc-box {
+  background: transparent;
+  border: 0;
+}
+
+.sec-footer .desc-box .card-title::after {
+  content: ' ';
+  background: #ffffff;
+  display: block;
+  width: 95%;
+  height: 0.2rem;
+  margin-top: 0.3rem;
+}
+
+.sec-footer .desc-box .card-text {
+  text-align: justify;
+}
+
+.sec-sub-footer {
+  background: #f2f2f4;
+  direction: rtl;
+  text-align: right;
+  color: #000;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.sec-sub-footer a {
+  font-size: 0.8rem;
+}
+
+
+
+/*------------------*/
+.snip {
+
+  position: relative;
+  font-size: 20px;
+  color: #e6e6e6;
+  width: 38px;
+  margin: 4px;
+  height: 38px;
+  line-height: 45px;
+  display: inline-block;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.snip:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #e6e6e6;
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.snip:before {
+  color: #fff;
+}
+
+.snip:before,
+.snip:after {
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+.snip:hover,
+.snip:active,
+.snip.hover {
+  color: #fff;
+}
+
+.snip:hover:after,
+.snip:active:after,
+.snip.hover:after {
+  border-color: #fff transparent #fff transparent;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+ul {
+  padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-dark-light {
+  background: #323232 !important;
+}
+
+.bg-theme,
+.bg-dark,
+.bg-dark-light,
+.bg-secondary {
+  color: #ffffff;
+}
+
+.widgets.footer-widgets .widget-title {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.widgets.footer-widgets .widget-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 150px;
+  background: $base-color-red;
+}
+
+.widgets.footer-widgets .widget-quick-links ul {
+  margin-top: -4px;
+}
+
+.widgets.footer-widgets .single-widget ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.widgets.footer-widgets .widget-quick-links ul li {
+  display: block;
+}
+
+.widgets.footer-widgets .widget-quick-links ul li a {
+  display: block;
+  font-size: 13px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 9px 0;
+}
+
+.widgets.footer-widgets .single-widget ul li {
+  list-style: none;
+}
+
+.widgets.footer-widgets .widget-contact ul li {
+  color: #000;
+  font-size: 13px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.widgets.footer-widgets .widget-contact ul li span {
+  font-size: 14px;
+  color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.widgets.footer-widgets .widget-contact ul li.phone,
+.widgets.footer-widgets .widget-contact ul li.fax {
+  font-size: 15px;
+}
+
+.footer-bottom-area {
+  width: 100%;
+  direction: rtl;
+  text-align: right;
+  overflow: hidden;
+}
+
+p {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  padding-right: 10px !important;
+}
+
+.address,
+.phone,
+.fax,
+.email {
+
+  margin-bottom: 15px;
+}
+
+.container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h5,
+.h5 {
+    font-size: 1.05rem !important;
+}
